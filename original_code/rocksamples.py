@@ -87,10 +87,14 @@ def Algorithm_Y(results):
             else:
                 print("criticality:", critical, "results above 5")
 
+def generate_random_inputs(a,b):
+    random_array = np.random.rand(3,2)
+    return random_array
+
 
 data_input1 = 'Coursework3\original_code\data1.csv'
-data_input2 = 'Coursework3\original_code\data2.csv'
-weight = 'Coursework3\original_code\weights.csv'
+data_input2 = 'data2.csv'
+weight = 'weights.csv'
 analysis = 'd-index'
 algorithm ='y'
 data1, data2, w = load_data(data_input1, data_input2, weight)
